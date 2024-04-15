@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test4</class>
+ <widget class="QMainWindow" name="Test4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget #centralwidget {
+	background-color: #935656
+}</string>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>561</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame  {
+	background-color: #4F0E0E;
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="questionNumberLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #F8F9FC</string>
+     </property>
+     <property name="text">
+      <string>Question</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="questionLabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #F8F9FC</string>
+     </property>
+     <property name="text">
+      <string>question</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="questionNumberLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #F8F9FC</string>
+     </property>
+     <property name="text">
+      <string>Which number logically follows the series?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>561</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+	background-color: #4F0E0E;
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="choice1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>-1</pointsize>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+    spacing: 5px; /* Adjust spacing between text and indicator */
+    font-size: 14px; /* Adjust font size */
+	color: #F8F9FC
+}
+
+QRadioButton::indicator {
+    width: 18px; /* Adjust indicator size */
+    height: 18px; /* Adjust indicator size */
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #666; /* Border color of unchecked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::unchecked:hover {
+    border: 2px solid #999; /* Border color on hover */
+}
+
+QRadioButton::indicator::checked {
+    background-color: #007bff; /* Background color of checked state */
+    border: 2px solid #007bff; /* Border color of checked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::checked:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border: 2px solid #0056b3; /* Border color on hover */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="choice2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+    spacing: 5px; /* Adjust spacing between text and indicator */
+    font-size: 14px; /* Adjust font size */
+	color: #F8F9FC
+}
+
+QRadioButton::indicator {
+    width: 18px; /* Adjust indicator size */
+    height: 18px; /* Adjust indicator size */
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #666; /* Border color of unchecked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::unchecked:hover {
+    border: 2px solid #999; /* Border color on hover */
+}
+
+QRadioButton::indicator::checked {
+    background-color: #007bff; /* Background color of checked state */
+    border: 2px solid #007bff; /* Border color of checked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::checked:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border: 2px solid #0056b3; /* Border color on hover */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="choice3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+    spacing: 5px; /* Adjust spacing between text and indicator */
+    font-size: 14px; /* Adjust font size */
+	color: #F8F9FC
+}
+
+QRadioButton::indicator {
+    width: 18px; /* Adjust indicator size */
+    height: 18px; /* Adjust indicator size */
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #666; /* Border color of unchecked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::unchecked:hover {
+    border: 2px solid #999; /* Border color on hover */
+}
+
+QRadioButton::indicator::checked {
+    background-color: #007bff; /* Background color of checked state */
+    border: 2px solid #007bff; /* Border color of checked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::checked:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border: 2px solid #0056b3; /* Border color on hover */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="choice4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>170</y>
+       <width>501</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+    spacing: 5px; /* Adjust spacing between text and indicator */
+    font-size: 14px; /* Adjust font size */
+	color: #F8F9FC
+}
+
+QRadioButton::indicator {
+    width: 18px; /* Adjust indicator size */
+    height: 18px; /* Adjust indicator size */
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #666; /* Border color of unchecked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::unchecked:hover {
+    border: 2px solid #999; /* Border color on hover */
+}
+
+QRadioButton::indicator::checked {
+    background-color: #007bff; /* Background color of checked state */
+    border: 2px solid #007bff; /* Border color of checked state */
+    border-radius: 9px; /* Border radius to make it round */
+}
+
+QRadioButton::indicator::checked:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border: 2px solid #0056b3; /* Border color on hover */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>710</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>710</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+	background-color: #4F0E0E;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>381</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #F8F9FC</string>
+     </property>
+     <property name="text">
+      <string>IQ TEST - TEST 4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="nextButton">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>540</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4F0E0E;
+    border: none;
+    color: #F8F9FC;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #DE3C3C;
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #F8F9FC</string>
+    </property>
+    <property name="text">
+     <string>time</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
